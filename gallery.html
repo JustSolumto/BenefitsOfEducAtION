@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - Benefits of Education</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Benefits of Education 🎓✨</h1>
+    <nav class="main-nav">
+      <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="nav-btn" onclick="window.location.href='benefits.html'">Benefits</button>
+      <button class="nav-btn" onclick="window.location.href='gallery.html'">Gallery</button>
+      <button class="nav-btn" onclick="window.location.href='game.html'">Game</button>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Famous Figures and Their Education</h2>
+    <div class="celebrity-gallery">
+      <div class="celebrity-item">
+        <img src="images/Natalie_Portman_at_Columbia_University-2.jpg" alt="Natalie Portman" onclick="enlargeImage(this)">
+        <p><strong>Natalie Portman</strong><br>Actress and social activist Natalie Portman at Columbia University discussing her work and role with global microfinance organization FINCA International</p>
+      </div>
+      <div class="celebrity-item">
+        <img src="images/Emma_Watson_Uruguay_1.jpg" alt="Emma Watson" onclick="enlargeImage(this)">
+        <p><strong>Emma Watson</strong><br>Ambassador of UN women Emma Watson gives a speech</p>
+      </div>
+      <div class="celebrity-item">
+        <img src="images/AlbertE.jpg" alt="Albert Einstein" onclick="enlargeImage(this)">
+        <p><strong>Albert Einstein</strong><br>PhD in Physics, ETH Zurich ⚛️</p>
+      </div>
+      <div class="celebrity-item">
+        <img src="images/JamesFrancoE.jpg" alt="James Franco" onclick="enlargeImage(this)">
+        <p><strong>James Franco</strong><br>Studied at UCLA, Columbia, and Yale 🎭📚</p>
+      </div>
+    </div>
+    <div id="modal" class="modal" onclick="closeModal()">
+      <img id="modal-img">
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Benefit of Education Project</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

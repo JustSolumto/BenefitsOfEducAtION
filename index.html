@@ -8,16 +8,12 @@
 </head>
 <body>
   <header>
-    <h1>Benefit of Education</h1>
-<p>Education is the key to unlocking your dreams! 💡📘</p>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="benefits.html">Benefits</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="game.html">Game</a></li>
-      </ul>
+    <h1>Benefits of Education 🎓✨</h1>
+    <nav class="main-nav">
+      <button class="nav-btn" onclick="window.location.href='index.html'">Home</button>
+      <button class="nav-btn" onclick="window.location.href='benefits.html'">Benefits</button>
+      <button class="nav-btn" onclick="window.location.href='gallery.html'">Gallery</button>
+      <button class="nav-btn" onclick="window.location.href='game.html'">Game</button>
     </nav>
   </header>
 
@@ -25,8 +21,8 @@
     <section>
       <h2>WELCOME!!</h2>
       <p>Education is the foundation for a brighter future. Learn how it transforms lives across the globe so that it may transform you!</p>
-      <button onclick="showGreeting()">Click me for a message</button>
-      <p id="greeting"></p>
+      <button class="greeting-btn" onclick="showGreeting()">💌 Click for a Special Message</button>
+      <p id="greeting" class="greeting-message"></p>
     </section>
   </main>
   <section></section>
@@ -40,6 +36,11 @@
     <p>&copy; 2025 Benefit of Education Project</p>
   </footer>
 
+  <script>
+    function showGreeting() {
+      document.getElementById('greeting').textContent = 'Thank you for being here, You Matter!';
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
