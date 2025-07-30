@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Game - Benefits of Education</title>
+  <title>Contact Us - Benefits of Education</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -20,20 +19,31 @@
   </header>
 
   <main>
-    <h2>Mini Game: How well do you know these celebrities!</h2>
-    <div id="quiz-container">
-      <p id="question"></p>
-      <div id="answers"></div>
-      <p id="result"></p>
-      <button onclick="loadQuestion()">Next</button>
-    </div>
+    <h2>Contact Us</h2>
+    <form class="contact-form" id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Why are you reaching out?</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit" class="greeting-btn">Submit</button>
+      <p id="formResult" class="greeting-message"></p>
+    </form>
   </main>
 
   <footer>
     <p>&copy; 2025 Benefit of Education Project</p>
   </footer>
-  <script src="script.js"></script>
+  <script>
+    document.getElementById('contactForm').onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('formResult').textContent = 'Thank you for reaching out! We appreciate your message.';
+      this.reset();
+    };
+  </script>
 </body>
 </html>
-
-
